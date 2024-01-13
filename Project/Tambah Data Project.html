@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2d0d4e5044.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="card mt-3 p-3">
+            <h3 class="card-title mt-2">TAMBAH DATA PROJECT</h3>
+        <hr>
+        <form class="text-end">
+            <!-- NAMA KARYAWAN -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="NamaKaryawan" class="form-label">Nama Karyawan</label>
+                </div>
+                <div class="col">
+                    <select class="form-select" id="Karyawan">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+            </div>
+            <!-- KLIEN -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="Klien" class="form-label">Klien</label>
+                </div>
+                <div class="col">
+                    <select class="form-select" id="Klien">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>                
+                </div>
+            </div>
+            <!-- PROJECT -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="Project" class="form-label">Project</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="Project">
+                </div>
+            </div>
+            <!-- JENIS -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="Jenis" class="form-label">Jenis</label>
+                </div>
+                <div class="col">
+                    <select class="form-select" id="Jenis">
+                        <option selected>Choose...</option>
+                        <option value="1">PERBAIKAN</option>
+                        <option value="2">FULL</option>
+                        <option value="3">SKIPSI</option>
+                      </select> 
+                </div>
+            </div>
+            <!-- Tanggal Mulai -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="TanggalMulai" class="form-label">Tanggal Mulai</label>
+                </div>
+                <div class="col">
+                    <input type="date" class="form-control" id="TanggalMulai">
+                </div>
+            </div>
+            <!-- Tanggal Selesai -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="TanggalSelesai" class="form-label">Tanggal Selesai</label>
+                </div>
+                <div class="col">
+                    <input type="date" class="form-control" id="TanggalSelesai">
+                </div>
+            </div>
+            <!-- Harga -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="Harga" class="form-label">Harga</label>
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" id="Harga">
+                </div>
+            </div>
+            <!-- DP -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="DP" class="form-label">DP</label>
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" id="DP">
+                </div>
+            </div>
+            <!-- Selesai DP -->
+            <div class="row mb-3">
+                <div class="col-2">
+                    <label for="SelesaiDP" class="form-label">Selesai DP</label>
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" id="SelesaiDP">
+                </div>
+            </div>
+            <!-- Selesai Project -->
+            <div class="row mb-3">
+                <div class="col-2"> 
+                    <label for="SelesaiProject" class="form-label">Selesai Project</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="SelesaiProject">
+                    <div class="d-flex justify-content-start mt-3">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="submit" class="btn btn-danger mx-1">Reset</button>
+                        <button type="submit" class="btn btn-warning mx-1">Kembali</button>
+                    </div>
+                </div>
+            </div>           
+          </form>
+        </div>      
+    </div>
+</body>
+</html>
